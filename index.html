@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Cool Login Page</title>
+</head>
+
+<body>
+    <!-- Must contain login and register form and Give A cool background and make the webpage responsive.. -->
+    <main>
+        <div class="card-login">
+
+            <h2>Cool <span>App</span></h2>
+            <form id="login">
+                <h3>Login</h3>
+                <div class="t-box">
+                    <input type="text" name="" placeholder="Email">
+                </div>
+                <div class="t-box">
+                    <input type="password" name="" placeholder="Password">
+                </div>
+            </form>
+            <form id="register" class="hidden">
+                <h3>Register</h3>
+                <div class="divisor"></div>
+                <div class="t-box">
+                    <input type="text" name="" placeholder="Email">
+                </div>
+                <div class="t-box">
+                    <input type="password" name="" placeholder="Password">
+                </div>
+                <div class="t-box">
+                    <input type="password" name="" placeholder="confirm password">
+                </div>
+                <div class="divisor-reverso"></div>
+            </form>
+            <div class="actions">
+                <button id="sign-up" class="btn btn-sign-up" onclick="showDialogSignUp('login')">Sign Up</button>
+                <button class="btn btn-register" onclick="showHideElement('register')">Register</button>
+                <button id="cancel" class="btn btn-register hidden" onclick="history.go(0)">back</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>

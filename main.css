@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    background-image: url("/assets/background-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    width: 25%;
+    min-height: 500px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+.card-login h2 {
+    color: #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: black;
+
+}
+
+.card-login h3 {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: black;
+    padding-bottom: 1em;
+
+}
+
+.card-login h2 span {
+    color: #ff6e60;
+
+}
+
+.t-box {
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    padding: 0 3em;
+
+
+}
+
+.t-box input {
+    background: transparent;
+    width: 100%;
+    outline: none;
+    border: 0;
+    text-align: center;
+    line-height: 2.5em;
+    color: #f2f2f2;
+    font-weight: 700;
+
+}
+
+::placeholder {
+    color: #f2f2f2;
+
+}
+
+.actions {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.btn {
+    width: 60%;
+    min-height: 40px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: #674e51;
+    color: #f2f2f2;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #674e51;
+    font-size: 20px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-sign-up {
+    background-color: rgba(244, 203, 175, 0.2);
+}
+
+.btn-sign-up:hover {
+    background-color: rgba(244, 203, 175, 0.4);
+
+}
+
+.btn-register:hover {
+    background-color: rgba(236, 202, 194, 0.4);
+
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.divisor {
+    background-color: blue;
+    width: 30px;
+    height: 1px;
+    position: absolute;
+    right: -30px;
+    border-bottom: 1px solid white;
+    animation: animate-ball;
+    animation-duration: 2s;
+
+}
+
+.divisor-reverso {
+    width: 30px;
+    height: 1px;
+    position: absolute;
+    left: -30px;
+    border-bottom: 1px solid white;
+    animation: animate-ball;
+    animation-duration: 2s;
+
+}
+
+
+@keyframes swap-login {
+    0% {
+        width: 25%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+@keyframes animate-ball {
+    0% {
+        width: 100%;
+        border-color: yellow;
+    }
+
+    50% {
+        width: 50%;
+        border-color: green;
+
+    }
+
+    100% {
+        width: 0;
+        border-color: blue;
+
+    }
+
+}
